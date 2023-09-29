@@ -6,7 +6,7 @@ function game() {
   let output = ""; // store the game output
 
   for (let i = 0; i < 5; i++) {
-    const playerSelection = prompt("Enter your choice: rock, paper, or scissors");
+    const playerSelection = prompt("Enter your choice: rock, paper, or scissors - the computer is not live (nor alive) so make all five choices, then see how you did!");
     const computerSelection = getComputerChoice();
     const result = playRound(playerSelection, computerSelection);
 
@@ -24,7 +24,7 @@ function game() {
   } else if (playerScore < computerScore) {
     output += "You lose the game!";
   } else {
-    output += "It's a tie!";
+    output += "It's a tie! pretty lame huh?";
   }  
 
   document.getElementById("gameOutput").innerHTML = output; // Display the game output

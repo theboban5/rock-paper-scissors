@@ -1,4 +1,4 @@
-/* how.css */
+/* play.css */
 
 * {
     background-color: lightgray;
@@ -6,6 +6,6 @@
     text-align: center;
     border: 10px;
     padding: 10px;
-    font-size: 25px;
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
 } 
