@@ -1,0 +1,21 @@
+
+
+.links {
+    text-align: center; /* Center-align the buttons horizontally */
+  }
+  
+  /* Style for the individual buttons */
+  .links a {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin: 5px; 
+    background-color: rgb(50, 200, 205); 
+    color: black; 
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 20px; /* Add rounded corners */
+    transition: background-color 0.3s ease; 
+  }
+  
+  .links a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }

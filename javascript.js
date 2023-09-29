@@ -3,6 +3,7 @@
 function game() {
   let playerScore = 0;
   let computerScore = 0;
+  let output = ""; // store the game output
 
   for (let i = 0; i < 5; i++) {
     const playerSelection = prompt("Enter your choice: rock, paper, or scissors");
@@ -15,16 +16,18 @@ function game() {
     computerScore++;
   }
 
-    console.log(`Round ${i + 1}: ${result}`);
+    output += `Round ${i + 1}: ${result}<br>`; // // Update the game output
   }
   
   if (playerScore > computerScore) {
-    console.log("You win the game!");
+    output += "You win the game!";
   } else if (playerScore < computerScore) {
-    console.log("You lose the game!");
+    output += "You lose the game!";
   } else {
-    console.log("It's a tie!");
+    output += "It's a tie!";
   }  
+
+  document.getElementById("gameOutput").innerHTML = output; // Display the game output
 }
 
 function getComputerChoice() {
