@@ -66,7 +66,3 @@ function playRound(playerSelection, computerSelection) {
 }
 
 game();
-
-
-
-
